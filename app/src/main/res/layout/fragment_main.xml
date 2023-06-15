@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtNewItems"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="New Itmes"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/newItemRecView"
+                android:layout_below="@+id/txtNewItems"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPopularItems"
+                android:layout_below="@+id/newItemRecView"
+                android:layout_marginStart="20dp"
+                android:text="Popular Itmes"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPopularItems"
+                android:layout_marginStart="10dp"
+                android:id="@+id/popularRec"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSuggestedItmens"
+                android:layout_below="@+id/popularRec"
+                android:layout_marginTop="10dp"
+                android:text="Suggested Items"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtSuggestedItmens"
+                android:id="@+id/suggestedRecView"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"/>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

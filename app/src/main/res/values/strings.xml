@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Shopping</string>
+    <string name="whiz_hall">Whiz Hall</string>
+    <string name="whiz_org">whiz.org</string>
+    <string name="todo">TODO</string>
+    <string name="drawer_open">drawer_open</string>
+    <string name="drawer_closed">drawer_closed</string>
+
+</resources>
