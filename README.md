@@ -10,4 +10,3 @@ This application was developed for started purposes trying to harness the power 
   <li>Data is lost on application uninstallation.</li>
   <li>No data persistance as its only stored in shared preferences</li>
 </ul>
-Thank you.
